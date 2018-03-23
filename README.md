@@ -25,7 +25,7 @@ Windows脚本如下：
     set processor=4
     set args=-source %source% -from %from% -processor %processor% -error %error%
     
-    dotnet C:\Users\Administrator\Desktop\Vs2017Test\MongoDbTest\MongoDbTest\bin\Release\netcoreapp2.0\MongoDbTest.dll %args%
+    dotnet MongoDbTest.dll %args%
     
     if %errorlevel% equ 0 (
     	color 0A
