@@ -7,12 +7,14 @@ Mongodb批量导入工具，采用MIT协议。
 
 生成之后, 找到Dll, 使用方法：
 
-```html
+```bash
+
     -source    Mongodb的bin目录,默认当前目录.
     -from      Mongodb的备份目录,默认当前目录.
     -error     该程序的错误日志输出,默认当前目录.
     -processor 启用的进程数,默认为CPU核数.
     -delay     进程池枯竭时轮询等待时间,由于是采用文件附加方式入库,速度较快,默认200毫秒.
+    
 ```
 
 
@@ -20,6 +22,7 @@ Mongodb批量导入工具，采用MIT协议。
 Windows脚本如下：
 
 ```bash
+
 @echo off
 cls
 set source=F:\SOFT-MG\bin\
@@ -38,6 +41,7 @@ if %errorlevel% equ 0 (
 	echo 执行失败！
 )
 pause >nul
+
 ```
 
 
